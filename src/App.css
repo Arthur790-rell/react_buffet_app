@@ -1,0 +1,387 @@
+
+.app-container {
+  min-height: 100vh;
+  padding: 35px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f7;
+}
+
+.calculator-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 17px;
+  padding: 30px 34px 22px;
+  box-shadow: 0 10px 25px rgba(30, 40, 60, 0.12);
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  background: #f0edff;
+  color: #593cff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #202b40;
+  margin: 0;
+}
+
+.header > p {
+  color: #788196;
+  font-size: 13px;
+  margin: 2px 0 17px;
+}
+
+.restaurant-logo {
+  width: 65px;
+  height: 57px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ed6847;
+  line-height: 1.1;
+}
+
+.restaurant-logo span {
+  font-size: 23px;
+}
+
+.restaurant-logo strong {
+  font-size: 11px;
+}
+
+.restaurant-logo small {
+  font-size: 8px;
+  color: #858b98;
+}
+
+/* Form */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group > label,
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #59657a;
+}
+
+.price-label {
+  font-size: 11px;
+  color: #8790a2;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 43px;
+  padding: 0 12px;
+  border: 1px solid #dce1e9;
+  border-radius: 8px;
+  background: #fff;
+  color: #27344a;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #a8afbc;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6445ff;
+  box-shadow: 0 0 0 3px rgba(100, 69, 255, 0.09);
+}
+
+.input-error {
+  border-color: #ef4444 !important;
+  background: #fffafa !important;
+}
+
+.error-message {
+  font-size: 11px;
+  color: #e53935;
+  margin: 0;
+}
+
+/* Drinks */
+
+.drink-section {
+  border: 1px solid #e4e7ed;
+  border-radius: 10px;
+  padding: 14px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.section-title {
+  font-weight: 500;
+  color: #38445a;
+  margin-bottom: 1px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #303b50;
+}
+
+.radio-option input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #563bff;
+  cursor: pointer;
+}
+
+.bottle-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 3px;
+}
+
+.drink-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #16a36a;
+  margin: 0;
+  background: #effaf5;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Discount */
+
+.discount-group select {
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 11px;
+  color: #929aab;
+}
+
+/* Buttons */
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 3px;
+}
+
+.button-group button {
+  flex: 1;
+  height: 45px;
+  border: none;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.button-group button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.button-group button:active {
+  transform: scale(0.98);
+}
+
+.calculate-btn {
+  background: #573bfa;
+  box-shadow: 0 4px 9px rgba(87, 59, 250, 0.16);
+}
+
+.reset-btn {
+  background: #fa343e;
+  box-shadow: 0 4px 9px rgba(250, 52, 62, 0.14);
+}
+
+/* Results */
+
+.result-section {
+  margin-top: 20px;
+  background: #f0f3ff;
+  border-radius: 10px;
+  padding: 17px;
+}
+
+.empty-result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.empty-result > span {
+  font-size: 13px;
+  color: #65718b;
+}
+
+.empty-result > strong {
+  font-size: 25px;
+  color: #5538ee;
+  font-weight: 700;
+}
+
+.empty-result > strong small {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.empty-result p {
+  margin: 0;
+  font-size: 11px;
+  color: #939cb0;
+}
+
+.result-content h2 {
+  font-size: 16px;
+  margin: 0 0 13px;
+  color: #303b50;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 9px;
+  font-size: 12px;
+  color: #65718b;
+}
+
+.result-row strong {
+  color: #354158;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.discount-result strong {
+  color: #16a36a;
+}
+
+.result-divider {
+  height: 1px;
+  background: #dce2f5;
+  margin: 13px 0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #29354c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.total-row strong {
+  font-size: 22px;
+  color: #573bfa;
+  white-space: nowrap;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #16a36a;
+  font-size: 11px;
+  margin: 12px 0 0;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding-top: 17px;
+}
+
+.footer p {
+  font-size: 10px;
+  color: #a0a7b5;
+  margin: 2px 0;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 18px 12px;
+    align-items: flex-start;
+  }
+
+  .calculator-card {
+    padding: 23px 18px 18px;
+    border-radius: 14px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .form-section {
+    gap: 14px;
+  }
+
+  .button-group {
+    gap: 9px;
+  }
+
+  .button-group button {
+    height: 43px;
+    font-size: 13px;
+  }
+
+  .total-row strong {
+    font-size: 19px;
+  }
+}
